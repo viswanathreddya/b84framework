@@ -1,10 +1,8 @@
 package generic;
 
 import java.io.File;
-import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -28,9 +26,10 @@ public class BaseTest {
 	public final String d_grid="no";
 	public final String d_gridurl="http://localhost:4444";
 	public final String d_browser="chrome";
-	public final String d_appurl="https://demo.actitime.com/login.do";	
+	public final String d_appurl="https://demo.actitime.com";	
 	public final String d_ito="10";
 	public final String d_eto="10";
+	public final String xl_path="./data/actiTIME.xlsx";
 	
 	public WebDriver driver;
 	public WebDriverWait wait;
@@ -47,7 +46,7 @@ public class BaseTest {
 	{
 		if(grid.equalsIgnoreCase("yes"))
 		{
-			URL url=new URL(gridurl);
+			
 			AbstractDriverOptions browserOptions;
 			if(browser.equalsIgnoreCase("chrome"))
 			{
@@ -65,6 +64,7 @@ public class BaseTest {
 
 				browserOptions = new EdgeOptions();
 			}
+			URL url=new URL(gridurl);
 			driver=new RemoteWebDriver(url, browserOptions);
 		}
 		else
@@ -93,14 +93,15 @@ public class BaseTest {
 	@AfterMethod
 	public void postCondition(ITestResult result) throws Exception
 	{
-		String testName = result.getName();
+		String testName=result.getName();
 		int status = result.getStatus();
 		if(status==2)
 		{
 			TakesScreenshot t=(TakesScreenshot)driver;
-			File srcfile = t.getScreenshotAs(OutputType.FILE);
-			File destfile=new File("./screenshot/"+testName+".png");
-			FileUtils.copyFile(srcfile, destfile);
+			File srcFile = t.getScreenshotAs(OutputType.FILE);
+			File dstFile=new File("./screenshot/"+testName+".png");//HW add date and time
+			FileUtils.copyFile(srcFile, dstFile);
+			
 		}
 		driver.quit();
 	}

@@ -4,18 +4,25 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="eto" value="9"/>
     <parameter name="ito" value="9"/>
-    <parameter name="grid" value="yes"/>
+    <parameter name="grid" value="no"/>
     <parameter name="browser" value="firefox"/>
     <parameter name="gridurl" value="http://localhost:4444"/>
     <parameter name="appurl" value="https://demo.actitime.com"/>
     <classes>
-      <class name="script.ValidLogin">
+      <class name="script.DemoTest2">
         <methods>
           <include name="postCondition"/>
+          <include name="testA"/>
           <include name="preCondition"/>
-          <include name="testValidLogin"/>
         </methods>
-      </class> <!-- script.ValidLogin -->
+      </class> <!-- script.DemoTest2 -->
+      <class name="script.DemoTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="testA"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.DemoTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
