@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 13 12:04:15 IST 2023</td>
+<td>Started on:</td><td>Wed Sep 13 20:35:07 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8157 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40412 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.DemoTest2.testA()'><b>testA</b><br>Test class: script.DemoTest2<br/>
-<a href="#Output-807053698" onClick='toggleBox("Output-807053698", this, "Show output", "Hide output");'>Show output</a>
+<td title='script.ValidLogin.testValidLogin()'><b>testValidLogin</b><br>Test class: script.ValidLogin<br/>
+<a href="#Output-103433239" onClick='toggleBox("Output-103433239", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-807053698" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-807053698">
-Google<br/>
+<a href="#Output-103433239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-103433239">
+Home Page is NOT displayed<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: null
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at script.DemoTest2.testA(DemoTest2.java:16)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at script.ValidLogin.testValidLogin(ValidLogin.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -114,11 +116,13 @@ Google<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace807053698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace807053698'><pre>java.lang.AssertionError: null
+</pre></div><a href='#' onClick='toggleBox("stack-trace103433239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103433239'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at script.DemoTest2.testA(DemoTest2.java:16)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at script.ValidLogin.testValidLogin(ValidLogin.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -146,8 +150,8 @@ Google<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>script.DemoTest2@229c6181</td></tr>
+<td>22</td>
+<td>script.ValidLogin@18df8434</td></tr>
 </table><p>
 </body>
 </html>
