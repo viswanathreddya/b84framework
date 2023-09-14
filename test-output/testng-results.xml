@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Home page is displayed]]>
+      <![CDATA[Err Msg is displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-09-14T09:04:15 IST" name="Default suite" finished-at="2023-09-14T09:04:36 IST" duration-ms="21257">
+  <suite started-at="2023-09-14T19:38:10 IST" name="Default suite" finished-at="2023-09-14T19:38:40 IST" duration-ms="29511">
     <groups>
     </groups>
-    <test started-at="2023-09-14T09:04:15 IST" name="Default test" finished-at="2023-09-14T09:04:36 IST" duration-ms="21257">
-      <class name="script.OrangeTest">
-        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.OrangeTest@65c7a252]" started-at="2023-09-14T09:04:15 IST" name="preCondition" finished-at="2023-09-14T09:04:32 IST" duration-ms="16685" status="PASS">
+    <test started-at="2023-09-14T19:38:10 IST" name="Default test" finished-at="2023-09-14T19:38:40 IST" duration-ms="29511">
+      <class name="script.InvalidLogin">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.InvalidLogin@65c7a252]" started-at="2023-09-14T19:38:10 IST" name="preCondition" finished-at="2023-09-14T19:38:36 IST" duration-ms="25741" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+                <![CDATA[https://demo.actitime.com/login.do]]>
               </value>
             </param>
             <param index="4">
@@ -46,25 +46,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testOrangeTest()[pri:1, instance:script.OrangeTest@65c7a252]" started-at="2023-09-14T09:04:32 IST" name="testOrangeTest" finished-at="2023-09-14T09:04:36 IST" duration-ms="4180" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@65c7a252]" started-at="2023-09-14T19:38:36 IST" name="testInvalidLogin" finished-at="2023-09-14T19:38:39 IST" duration-ms="3000" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Home page is displayed]]>
+              <![CDATA[Err Msg is displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testOrangeTest -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.OrangeTest@65c7a252]" started-at="2023-09-14T09:04:36 IST" name="postCondition" finished-at="2023-09-14T09:04:36 IST" duration-ms="321" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@65c7a252]" started-at="2023-09-14T19:38:39 IST" name="postCondition" finished-at="2023-09-14T19:38:40 IST" duration-ms="659" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOrangeTest status=SUCCESS method=OrangeTest.testOrangeTest()[pri:1, instance:script.OrangeTest@65c7a252] output=Home page is displayed]]]>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@65c7a252] output=Err Msg is displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- script.OrangeTest -->
+      </class> <!-- script.InvalidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
