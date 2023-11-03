@@ -2,7 +2,7 @@ package practies;
 
 public class ReverseString {
 	public static void main(String[] args) {
-		String name="Viswa";
+		String name="Viswa Virat";
 		int l = name.length();
 		for (int i=l-1;i>=0;i--)
 		{
