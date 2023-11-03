@@ -2,7 +2,7 @@ package practies;
 
 import java.util.Arrays;
 
-public class ReverseStringShiftUsingLoop {
+public class ReverseStringUsingSplit {
     public static void main(String[] args) {
     	
         String input = "Anakanna gari Viswanath";
