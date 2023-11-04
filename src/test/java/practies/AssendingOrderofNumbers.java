@@ -18,7 +18,7 @@ public class AssendingOrderofNumbers {
 	}
 		for(int single:nums)
 		{
-		System.out.println(single);
+		System.out.print(nums[nums.length-2]);
 		}
 
 }
