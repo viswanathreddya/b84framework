@@ -6,8 +6,9 @@ public class DuplicateCharecterscount {
 		name=name.toLowerCase();
 		name=name.replace(" ", "");
 		char[] ch = name.toCharArray();
-	
-		int count=0;
+		
+		String duplicate="";
+		String constant="";
 		for(int i=0; i<ch.length; i++)
 		{
 			char currentcar = ch[i];
@@ -15,15 +16,21 @@ public class DuplicateCharecterscount {
 			for(int j=i+1; j<ch.length;j++)
 			{
 				if(ch[j]==currentcar)
-				{		
+				{	
 					
-					System.out.println(ch[j]);
+					duplicate=duplicate+currentcar;
+					break;
+					
+				}
+				else {
+					constant=constant+currentcar;
 					break;
 				}
-			}
-		
+			}		
 			
 		}
+		System.out.println(constant);
+		
 	}
 	
 }
